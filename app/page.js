@@ -10,19 +10,29 @@ import Processes from "./components/Processes";
 import SEOSection from "./components/SEOSection";
 import Services from "./components/Services";
 import TextSection from "./components/TextSection";
+import HeroTwo from "./components/HeroTwo";
+import RoiSection from "./components/RoiSection";
+import ContactSection from "./components/ContactSection";
+import PulseButton from "./components/PulseButton";
+// import BlackCurve from "./components/BlackCurve";
 
 export default function Home() {
   return (
     <div>
+      <PulseButton />
       <Hero />
-      <Services />
+      {/* <BlackCurve /> */}
+
+      {/* <Services /> */}
       <ConversionSection />
       <DesignSection />
-      <SEOSection />
-      <Processes />
-      <TextSection />
-      <BigCardSection />
-      <Pricing />
+      <RoiSection />
+      <ContactSection />
+      {/* <SEOSection /> */}
+      {/* <Processes /> */}
+      {/* <TextSection /> */}
+      {/* <BigCardSection /> */}
+      {/* <Pricing /> */}
       <FAQ />
     </div>
   );

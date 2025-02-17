@@ -31,9 +31,9 @@ const Navbar = () => {
           : "w-full bg-white border-b border-zinc-200 shadow-[0px_3px_20px_0px_rgba(0,_0,_0,_0.1)] hover:shadow-[0px_0px_20px_1px_#38bdf8] p-5 text-zinc-950 mt-0"
       }`}
     >
-      <div className="flex justify-between items-center mx-auto px-1 cursor-pointer select-none">
+      <div className="flex justify-between pr-10 items-center mx-auto px-1 cursor-pointer select-none">
         <div className="flex gap-2 items-center">
-          <PulsingCircle stroke={isScrolled ? "#FFFFFF" : "#000000"}/>
+          {/* <PulsingCircle stroke={isScrolled ? "#FFFFFF" : "#000000"}/> */}
           <Image
             src={isScrolled ? SkyGrowthWhite : SkyGrowthBlack}
             width={130} // Adjust size as needed
@@ -44,20 +44,24 @@ const Navbar = () => {
         </div>
 
         {/* Menu Items */}
-        <ul className="flex items-center space-x-6 font-extralight">
-          <li className="cursor-pointer relative group transition-all duration-300 hover:text-purple-500">
-            About
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        <ul className="flex items-center space-x-10 font-extralight">
+          <li className="cursor-pointer relative group transition-all duration-300 hover:text-blue-300">
+            About Us
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li className="cursor-pointer relative group transition-all duration-300 hover:text-purple-500">
-            Projects
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+          <li className="cursor-pointer relative group transition-all duration-300 hover:text-blue-300">
+            Our Work
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li className="cursor-pointer relative group transition-all duration-300 hover:text-purple-500">
-            FAQ
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+          <li className="cursor-pointer relative group transition-all duration-300 hover:text-blue-300">
+            Services
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <PulsingCircle stroke={isScrolled ? "#FFFFFF" : "#000000"}/>
+          <li className="cursor-pointer relative group transition-all duration-300 hover:text-blue-300">
+            Contact
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          {/* <PulsingCircle stroke={isScrolled ? "#FFFFFF" : "#000000"}/> */}
         </ul>
       </div>
     </nav>

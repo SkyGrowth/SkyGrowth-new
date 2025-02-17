@@ -4,19 +4,7 @@ const Button = ({ label, onClick }) => {
     <button
       onClick={onClick}
       className="
-        font-bold
-        px-6 py-3 
-        bg-black
-        text-white
-        text-lg 
-        rounded-lg 
-        shadow-lg 
-        hover:scale-105 
-        transform transition-transform duration-200 
-        focus:outline-none 
-        focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50
-        active:bg-blue-600
-        "
+        bg-blue-700 text-white px-4 py-3 md:text-base hover:brightness-125 rounded-lg flex items-center space-x-2 transition-all tracking-tight duration-300 font-body"
     >
       {label}
     </button>
@@ -24,3 +12,9 @@ const Button = ({ label, onClick }) => {
 }
 
 export default Button;
+
+{/* <div className="mt-5 flex gap-4">
+        <button className="flex px-8 py-5 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition">
+          Free 7 Day Trial
+          <div className="py-1 pl-2">
+          </div>  */}

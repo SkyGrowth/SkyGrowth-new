@@ -1,28 +1,29 @@
-import Image from 'next/image'
-import DesignImage from '../../public/design.jpg'
+import Image from 'next/image';
+import man from '../../public/man.png';
 
 const DesignSection = () => {
   return (
-    <section className='bg-white text-black h-screen flex items-center justify-center text-left p-6'>
+    <section className='bg-white text-black flex items-center justify-center text-left p-6'>
       <div className='flex items-center justify-center gap-8'>
         <div className='max-w-[600px]'>
-          <h3 className='font-manrope text-8xl font-bold tracking-tighter'>
-            High quality design
+          <h3 className='font-manrope text-4xl font-bold tracking-tighter'>
+            Stay Connected
           </h3>
           <p className='mt-6 font-extralight max-w-[400px] text-xl'>
-Our high-quality web design combines visually stunning aesthetics with seamless user experiences to leave a lasting impression.          </p>
+            When they reply, we'll push you a notification from our software, where you can continue the conversation!
+          </p>
         </div>
         <div className='max-w-[600px]'>
           <Image
-            src={DesignImage}
-            width={700}
-            height={700}
+            src={man}
+            width={450}
+            height={450}
             alt="Picture of the author"
           />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DesignSection
+export default DesignSection;
